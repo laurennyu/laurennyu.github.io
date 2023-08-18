@@ -1,0 +1,117 @@
+body {
+    background-color: #353949;
+}
+
+#header {
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    background-color: #5F587D;
+}
+
+#name {
+    position: absolute;
+    bottom: 49px;
+    width: 100%;
+    left: 8px;
+
+    color: #FFFFFF;
+    font-family: "Paytone One", monospace;
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 20px;
+    margin: 0px 0px 5px;
+    padding: 0px;
+}
+
+#scribble {
+    color: #D0B2F5;
+    font-family: "Redacted Script", serif;
+    font-size: 86px;
+    text-align: center;
+    letter-spacing: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation ul {
+    font-family: "Jost", monospace;
+    margin: 0px 0px 20px;
+    padding: 0px;
+    text-align: center;
+}
+.navigation li {
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: 0px;
+    display: inline-block;
+}
+.navigation a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: #ABCDFF;
+}
+
+.page {
+    position: relative;
+    top: 140px;
+    margin: 0px 40px 40px;
+}
+
+
+h2 {
+    color: #D0B2F5;
+    font-family: "Jost", monospace;
+    font-size: 30px;
+    margin: 40px 0px 10px;
+}
+
+.proj {
+    margin: 0px 10px 5px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-family: "Jost", monospace;
+    border-radius: 10px;
+}
+
+.proj:hover {
+    background-color: #4A4863;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0px 0px 5px;
+}
+
+
+p {
+    color: #FFFFFF;
+    font-family: "Jost", monospace;
+    margin: 0px 20px 20px;
+}
+
+a {
+    color: #FFFFFF;
+    font-family: "Jost", monospace;
+    
+}
+a:hover {
+    color: #ABCDFF;
+}
+
+#goodbye {
+    margin: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 30px;
+    background-color: #5F587D;
+    position: relative;
+    top: 180px;
+    right: 0px;
+}
