@@ -23,8 +23,8 @@
             <nav class="navigation">
                 <ul>
                     <li><a href="#about-me">about</a></li>
-                    <li><a href="#top">projects</a></li>
-                    <li><a href="#top">designs</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#designs">designs</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -34,15 +34,19 @@
             <h2>
                 hi there! welcome to my website!
             </h2>
-            <p>
+            <p class="intro-text">
                 My name is Lauren. I'm from Long Island, NY, but have spent the last couple of years in Houston, TX, as a student at Rice University. I'm currently studying 
                 <span style="color: #ABCDFF">Computer Science</span>, 
                 <span style="color: #ABCDFF">Data Science</span>, and 
                 <span style="color: #ABCDFF">Biochemistry and Cell Biology</span>. In my free time, I enjoy designing, listening to music, learning Spanish, and playing tennis.
             </p>
-            <p>
+            <p class="intro-text">
                 Feel free to browse and take a look at some of my work and projects!
             </p>
+            <div id="photo-panel">
+                <img class="photo" src="lauren.jpeg" alt="photo of Lauren">
+
+            </div>
         </div>
 
         <div id="projects" class="page">
@@ -51,34 +55,52 @@
             </h2>
             <div class="proj">
                 <h3>
-                    <span style="color: #ABCDFF">Personal Website</span> <span style="font-weight: 100;"> | <em>HTML, CSS</em></span>
+                    Personal Website <span style="font-weight: 100; color: #D0B2F5"> | <em>HTML, CSS, Git</em></span>
                 </h3>
+                <p class="dates">
+                    July 2023 - Present
+                </p>
                 <p>
-                    project details
+                    Built and designed personal website to showcase my computational and design projects.
                 </p>
             </div>
             <div class="proj">
                 <h3>
-                    <span style="color: #ABCDFF">OneStar Foundation Data Analysis</span> <span style="font-weight: 100;"> | <em>Python, R</em></span>
+                    OneStar Foundation Data Analysis <span style="font-weight: 100; color: #D0B2F5"> | <em>Python, R</em></span>
                 </h3>
+                <p class="dates">
+                    February 2023 - May 2023
+                </p>
                 <p>
-                    project details
+                    Collaborated with a team to clean, analyze, and visualize 20 years of data in R and Python to understand trends 
+                    and propose recommendations for OneStar to improve volunteer and donor retention. Presented findings and 
+                    recommendations to 50+ Texas nonprofit organizations.
                 </p>
             </div>
             <div class="proj">
                 <h3>
-                    <span style="color: #ABCDFF">RURS project</span> <span style="font-weight: 100;"> | <em>R (bioconductor, GRanges)</em></span>
+                    Bioinformatics Research Project <span style="font-weight: 100; color: #D0B2F5"> | <em>R (Bioconductor)</em></span>
                 </h3>
+                <p class="dates">
+                    Baylor College of Medicine (Ratnapriya Lab), January 2023 - May 2023
+                </p>
                 <p>
-                    Presented poster at 2023 Rice Undergraduate Research Symposium.
+                    Analyzed large data sets of chromatin accessibility and gene expression data in human ocular tissues to identify 
+                    regions in the non-coding human genome that may contain causal variants in inherited retinal diseases.
+                    Presented poster at the 2023 Rice Undergraduate Research Symposium.
                 </p>
             </div>
             <div class="proj">
                 <h3>
-                    <span style="color: #ABCDFF">Nora's Home Donor Data Analysis</span> <span style="font-weight: 100;"> | <em>R</em></span>
+                    Nora's Home Donor Data Analysis <span style="font-weight: 100; color: #D0B2F5"> | <em>R</em></span>
                 </h3>
+                <p class="dates">
+                    September 2022 - December 2022
+                </p>
                 <p>
-                    project details
+                    Collaborated with a team to clean, analyze, and visualize 8 years of donor data in R to understand patterns 
+                    in donations and donor retention to ensure Nora’s Home can continue to provide affordable housing for transplant 
+                    patients and their families in the Texas Medical Center.
                 </p>
             </div>
         </div>
@@ -111,8 +133,8 @@
             </p>
         </div>
 
-        <p id="goodbye">
+        <footer id="goodbye">
             thanks for stopping by :)
-        </p>
+        </footer>
     </body>
 </html>
