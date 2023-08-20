@@ -1,8 +1,18 @@
 body {
     background-color: #353949;
+    margin: 0;
 }
 
-#header {
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 40px;
+}
+
+.header {
     padding-top: 10px;
     position: fixed;
     width: 100%;
@@ -12,11 +22,11 @@ body {
     background-color: #5F587D;
 }
 
-#name {
+.name {
     position: absolute;
     bottom: 49px;
     width: 100%;
-    left: 8px;
+    left: 10px;
 
     color: #FFFFFF;
     font-family: "Paytone One", monospace;
@@ -27,7 +37,7 @@ body {
     padding: 0px;
 }
 
-#scribble {
+.scribble {
     color: #D0B2F5;
     font-family: "Redacted Script", serif;
     font-size: 86px;
@@ -58,21 +68,21 @@ body {
 }
 
 .page {
-    position: relative;
-    top: 140px;
     margin: 0px 40px 40px;
 }
-
-
-
-#photo-panel {
-    display: inline-block;
-    align-items: center;
+.header-rectangle {
+    height: 130px;
 }
-.photo {
+
+.photo-panel {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+}
+.photo-circle {
     width: 250px;
     height: 250px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 125px;
 }
 
@@ -119,11 +129,11 @@ p {
 a {
     color: #FFFFFF;
     font-family: "Jost", monospace;
-    
 }
 a:hover {
     color: #ABCDFF;
 }
+
 
 footer {
     font-family: "Jost", monospace;
@@ -131,8 +141,25 @@ footer {
     text-align: center;
     letter-spacing: 1px;
     background-color: #5F587D;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 20px;
+    float: none; margin: 0 auto
+}
+footer #thanks {
+    font-size: 13px;
     margin: 0px;
-    padding: 30px;
-    position: relative;
-    top: 180px;
+    padding: 0px;
+}
+footer #signature {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.proj-description {
+    margin-bottom: 10px;
 }
