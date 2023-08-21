@@ -71,18 +71,14 @@ body {
     margin: 0px 40px 40px;
 }
 .header-rectangle {
-    height: 125px;
+    height: 120px;
 }
 
-.photo-panel {
-    display: flex;
-    align-items: start;
-    justify-content: left;
-}
 .photo-circle {
     width: 250px;
     height: 250px;
-    margin: 15px;
+    display: block;
+    margin: 15px auto;
     border-radius: 125px;
 }
 
@@ -92,6 +88,12 @@ h2 {
     font-family: "Jost", monospace;
     font-size: 30px;
     margin: 40px 0px 10px;
+}
+#welcome {
+    text-align: center;
+}
+#intro-text {
+    text-align: center;
 }
 
 .proj {
