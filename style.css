@@ -24,13 +24,13 @@ body {
 
 .name {
     position: absolute;
-    bottom: 49px;
+    bottom: 47px;
     width: 100%;
     left: 10px;
 
     color: #FFFFFF;
     font-family: "Paytone One", monospace;
-    font-size: 44px;
+    font-size: 36px;
     text-align: center;
     letter-spacing: 20px;
     margin: 0px 0px 5px;
@@ -40,7 +40,7 @@ body {
 .scribble {
     color: #D0B2F5;
     font-family: "Redacted Script", serif;
-    font-size: 86px;
+    font-size: 72px;
     text-align: center;
     letter-spacing: 10px;
     margin: 0px;
@@ -56,7 +56,7 @@ body {
 .navigation li {
     letter-spacing: 1px;
     font-size: 16px;
-    margin: 0px 30px;
+    margin: 0px 22px;
     display: inline-block;
 }
 .navigation a {
@@ -71,7 +71,7 @@ body {
     margin: 0px 40px 40px;
 }
 .header-rectangle {
-    height: 130px;
+    height: 125px;
 }
 
 .photo-panel {
