@@ -9,7 +9,9 @@ body {
 }
 
 #content-wrap {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 
 .header {
@@ -81,6 +83,17 @@ body {
     margin: 20px auto;
     border-radius: 125px;
 }
+
+.photo-project {
+    width: 600px;
+    height: 450px;
+}
+
+.photo-center-block {
+    text-align: center;
+    margin: 10px;
+}
+
 #intro-text p {
     text-align: center;
 }
@@ -124,7 +137,7 @@ p {
 
 .dates {
     margin: 0px 0px 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
     opacity: 0.8;
 }
@@ -137,6 +150,12 @@ a:hover {
     color: #ABCDFF;
 }
 
+.h3-link {
+    font-size: 18px;
+    margin: 5px 0px 0px;
+    color: #ABCDFF
+}
+
 
 footer {
     font-family: "Jost", monospace;
@@ -144,8 +163,8 @@ footer {
     text-align: center;
     letter-spacing: 1px;
     background-color: #5F587D;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -158,7 +177,7 @@ footer #thanks {
     padding: 0px;
 }
 footer #signature {
-    font-size: 10px;
+    font-size: 13px;
     margin: 0px;
     padding: 0px;
 }
