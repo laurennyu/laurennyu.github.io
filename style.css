@@ -81,8 +81,8 @@ body {
 .photo-circle {
     width: 250px;
     height: 250px;
-    display: block;
-    margin: 20px auto;
+    float: left;
+    margin: 20px 30px 20px 0px;
     border-radius: 125px;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 #intro-text p {
-    text-align: center;
+    padding-top: 15px;
 }
 
 
