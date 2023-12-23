@@ -71,6 +71,7 @@ body {
     margin: auto;
     margin-bottom: 40px;
     width: 700px;
+    max-width: 90%;
     text-align: center;
 }
 .header-rectangle {
