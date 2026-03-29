@@ -1,0 +1,15 @@
+{
+  "projects": [
+    {
+      "title": "Personal Website",
+      "description": "Designed and built a personal website to showcase my computational and design projects.",
+      "link": "https://laurennyu.github.io",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Prioritizing the Regulatory Noncoding Genome for Disease Causal Variant in Retinal Diseases",
+      "description": "Analyzed large datasets to identify regions in the non-coding human genome that may harbor causal variants in inherited retinal diseases.",
+      "technologies": ["Python", "R", "Bioinformatics"]
+    }
+  ]
+}

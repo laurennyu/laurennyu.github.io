@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* --- design intent:
+   Cleaner, minimal, techy. Fewer heavy shadows, subtle borders, crisp spacing,
+   accent glow on hover, consistent rhythm. --- */
+/* Derived Sass colors (use real Sass colors for operations) */
+/* expose runtime tokens */
+:root {
+  --primary: #5F587D;
+  --secondary: #D0B2F5;
+  --accent: #ABCDFF;
+  --bg: #353949;
+  --page-bg: #5F587D;
+  --text: #FFFFFF;
+  --radius: 8px;
+  --ease: 0.3s;
+  --font-main: Jost, sans-serif;
+  --font-heading: Paytone One, sans-serif;
+  --muted-border: rgba(255, 255, 255, 0.15);
+  --muted-text: rgba(255, 255, 255, 0.82);
+  --accent-glow: rgba(171, 205, 255, 0.9);
+}
+
+/* Reset & base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgb(87.4, 80.96, 115) 0%, var(--primary) 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  -webkit-font-feature-settings: "ss01" 1;
+}
+
+/* Layout */
+#page-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+}
+
+/* Header */
+site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: block;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.04));
+  border-bottom: 1px solid var(--muted-border);
+  padding: 12px 20px;
+  backdrop-filter: blur(6px) saturate(1.05);
+}
+
+site-header .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-family: var(--font-heading);
+  letter-spacing: 3px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+/* Main area */
+/* Main area */
+main {
+  background: transparent; /* ensure main doesn't introduce a new background */
+  padding: 40px 20px;
+  display: block;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Page card */
+/* Page card — make surfaces subtle so they visually blend with body */
+.page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 48px;
+  padding: 28px;
+  background: transparent; /* no separate card background */
+  border-radius: calc(var(--radius) - 2px);
+  border: none; /* remove the visible border that caused the cutoff */
+  box-shadow: none; /* keep it flat and clean */
+}
+
+/* Headings */
+.subheading {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  color: var(--secondary);
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Intro */
+#intro-text p {
+  color: var(--text);
+  opacity: 0.92;
+  font-size: 15px;
+  max-width: 70ch;
+  margin-top: 6px;
+}
+
+/* #projects {
+  margin-top: -200px;
+  padding-top: 200px;
+} */
+
+/* Projects grid: simple card grid with subtle separators */
+#projects .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+/* project-card host element remains block-level */
+project-card {
+  display: block;
+}
+
+/* Inside project-card: minimal card surface */
+project-card .card {
+  background: transparent;
+  border-radius: 10px;
+  padding: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: transform var(--ease) ease, box-shadow var(--ease) ease, border-color var(--ease);
+  cursor: pointer;
+  will-change: transform;
+}
+
+/* Hover: subtle lift + accent outline glow */
+project-card .card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(15, 18, 30, 0.12), 0 0 18px var(--accent-glow);
+}
+
+/* meta row */
+project-card .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* thumbnail: crisp, no heavy radius */
+project-card img.thumb {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--secondary), var(--accent));
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Title & description */
+project-card h3 {
+  font-family: var(--font-heading);
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  margin-top: 6px;
+}
+
+project-card p {
+  color: var(--muted-text);
+  font-size: 13px;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* CTA row: micro buttons, outline style */
+.project-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  transition: background var(--ease) ease, transform var(--ease) ease, border-color var(--ease);
+  text-decoration: none;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn:hover {
+  background: rgba(171, 205, 255, 0.04);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+/* Footer */
+site-footer {
+  display: block;
+  color: var(--muted-text);
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid var(--muted-border);
+  background: transparent;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--ease) ease;
+}
+
+a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  #projects .cards {
+    grid-template-columns: 1fr;
+  }
+  .subheading {
+    font-size: 20px;
+  }
+  project-card img.thumb {
+    height: 140px;
+  }
+  .page {
+    padding: 20px;
+  }
+}
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
