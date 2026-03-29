@@ -1,22 +1,19 @@
 {
   "name": "laurenyu-portfolio",
-  "version": "1.0.0",
-  "description": "A sleek and tech-savvy portfolio website for showcasing projects and skills.",
-  "main": "src/index.html",
+  "version": "2.0.0",
+  "description": "A portfolio website for showcasing projects and skills.",
+  "main": "index.html",
   "scripts": {
-    "build": "npm run build-css && npm run build-js",
-    "build-css": "node-sass src/styles/main.scss public/styles/main.css",
-    "build-js": "babel src/scripts --out-dir public/scripts",
-    "start": "live-server public",
+    "build": "npm run build-css",
+    "build-css": "sass styles/main.scss styles/main.css",
+    "build-js": "echo \"No JS build step configured\"",
+    "start": "live-server . --open=./index.html --ignore=node_modules",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "author": "Lauren Yu",
-  "license": "MIT",
   "dependencies": {
-    "node-sass": "^6.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "sass": "^1.98.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

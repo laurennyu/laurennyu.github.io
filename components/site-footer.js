@@ -30,8 +30,8 @@ class SiteFooter extends HTMLElement {
             <footer>
                 <p>Lauren Yu, ${new Date().getFullYear()}.</p>
                 <p>
-                    <a href="https://github.com/laurenyu" target="_blank">GitHub</a> | 
-                    <a href="https://www.linkedin.com/in/laurenyu" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/laurennyu" target="_blank">GitHub</a> | 
+                    <a href="https://www.linkedin.com/in/laurenyuu" target="_blank">LinkedIn</a>
                 </p>
             </footer>
         `;

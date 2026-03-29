@@ -89,7 +89,7 @@ site-header .inner {
 main {
   background: transparent; /* ensure main doesn't introduce a new background */
   padding: 40px 20px;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
 }
@@ -125,11 +125,6 @@ main {
   max-width: 70ch;
   margin-top: 6px;
 }
-
-/* #projects {
-  margin-top: -200px;
-  padding-top: 200px;
-} */
 
 /* Projects grid: simple card grid with subtle separators */
 #projects .cards {
@@ -273,3 +268,5 @@ a:hover {
     transform: none !important;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
