@@ -169,8 +169,8 @@ footer {
     text-align: center;
     letter-spacing: 1px;
     background-color: #5F587D;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 35px;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -186,6 +186,17 @@ footer #signature {
     font-size: 13px;
     margin: 0px;
     padding: 0px;
+}
+footer #social-links {
+    font-size: 13px;
+    margin: 2px 0px;
+    padding: 0px;
+}
+footer #social-links a {
+    color: #FFFFFF;
+}
+footer #social-links a:hover {
+    color: #ABCDFF;
 }
 footer p {
     text-align: center;
