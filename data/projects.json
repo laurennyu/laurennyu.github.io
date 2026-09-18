@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "title": "Recipe Scraper",
+      "technologies": ["Python", "HTML", "JavaScript"],
+      "dates": "July 2026 - Present",
+      "description": "Built a recipe parser browser extension to extract structured recipe data from recipe websites. Includes a dashboard to view stored recipes and user ratings.",
+      "link": "https://github.com/laurennyu/recipe-scraper"
+    },
+    {
+      "title": "SLB Game Editor & Engine (SLB-Sponsored)",
+      "technologies": ["TypeScript", "C#", "React", "Azure (SignalR, CosmosDB)"],
+      "dates": "SLB & Rice University, Jan 2025 - May 2025",
+      "description": "Collaborated with 30+ students to develop full-stack real-time multiplayer game editor and engine web apps for SLB. Designed and implemented CosmosDB data models and backend integrations to persist and synchronize game state. Developed test cases and conducted load testing to evaluate database performance, scalability, and data consistency under concurrent user workloads."
+    },
+    {
+      "title": "IntrEEGing NEURONets",
+      "technologies": ["Python"],
+      "dates": "Feb 2025",
+      "description": "Designed a hybrid graph neural network/CNN to classify psychiatric disorders from EEG recordings of 945 subjects. Modeled EEG electrodes as coherence-weighted graph nodes and fused graph and CNN features for classification. Won Best Overall at the Rice Datathon, achieving 38.5% multiclass accuracy across 7 psychiatric disorder classes.",
+      "link": "https://devpost.com/software/gradient-boosted-treegs"
+    },
+    {
+      "title": "Houston Fire Department Response Time Analysis (HFD-Sponsored)",
+      "technologies": ["Python"],
+      "dates": "HFD & Rice University, Jan 2025 - May 2025",
+      "description": "Analyzed emergency and rainfall data to identify factors leading to delays in Houston Fire Department response. Conducted data wrangling, feature engineering, outlier detection, and geospatial visualization on millions of rows. Built survival analysis models and geographically weighted regression models to model and predict travel time."
+    },
+    {
+      "title": "Candlelighters Cancer Patient Data Analysis",
+      "technologies": ["Python"],
+      "dates": "Biokind Analytics, Jan 2024 - May 2024",
+      "description": "Led a team of 5 students to analyze and visualize trends in demographics, cancer diagnoses, and event attendance data from 5,000 patients over 20+ years to improve patient diversity and engagement with the Candlelighters."
+    },
+    {
+      "title": "Prioritizing the Regulatory Noncoding Genome for Disease Causal Variant in Retinal Diseases",
+      "technologies": ["Python", "R"],
+      "dates": "Baylor College of Medicine, Jan 2023 - May 2023",
+      "description": "Analyzed large data sets of chromatin accessibility (bulk and single-cell ATAC-seq) and gene expression (bulk and single-cell RNA-seq) data in human ocular tissues to identify regions in the non-coding human genome that may harbor causal variants in inherited retinal diseases. Presented poster at the 2023 Rice Undergraduate Research Symposium.",
+      "image": {
+        "src": "LaurenYuBCMposter.png",
+        "alt": "Research poster presented at the 2023 Rice Undergraduate Research Symposium"
+      }
+    },
+    {
+      "title": "Nora's Home Donor Data Analysis",
+      "technologies": ["R"],
+      "dates": "Biokind Analytics, Sep 2022 - Dec 2022",
+      "description": "Collaborated with a team to clean, analyze, and visualize 8 years of donor data to improve donor retention for supporting transplant patients in the Texas Medical Center."
+    }
+  ]
+}

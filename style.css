@@ -89,7 +89,8 @@ body {
 
 .photo-project {
     width: 610px;
-    height: 455px;
+    max-width: 100%;
+    height: auto;
     margin-top: 5px;
 }
 
@@ -160,6 +161,17 @@ a:hover {
     font-size: 18px;
     margin: 5px 0px 0px;
     color: #ABCDFF
+}
+
+.technologies {
+    font-weight: 100;
+    color: #D0B2F5;
+}
+
+.projects-error {
+    color: #FFFFFF;
+    font-family: "Jost", monospace;
+    margin: 20px;
 }
 
 
