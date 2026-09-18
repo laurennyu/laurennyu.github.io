@@ -11,7 +11,11 @@
       "title": "SLB Game Editor & Engine (SLB-Sponsored)",
       "technologies": ["TypeScript", "C#", "React", "Azure (SignalR, CosmosDB)"],
       "dates": "SLB & Rice University, Jan 2025 - May 2025",
-      "description": "Collaborated with 30+ students to develop full-stack real-time multiplayer game editor and engine web apps for SLB. Designed and implemented CosmosDB data models and backend integrations to persist and synchronize game state. Developed test cases and conducted load testing to evaluate database performance, scalability, and data consistency under concurrent user workloads."
+      "description": "Collaborated with 30+ students to develop full-stack real-time multiplayer game editor and engine web apps for SLB. Designed and implemented CosmosDB data models and backend integrations to persist and synchronize game state. Developed test cases and conducted load testing to evaluate database performance, scalability, and data consistency under concurrent user workloads.",
+      "image": {
+        "src": "images/comp410poster.jpeg",
+        "alt": "Capstone final poster presented at the Rice Engineering Design Showcase"
+      }
     },
     {
       "title": "IntrEEGing NEURONets",
@@ -38,7 +42,7 @@
       "dates": "Baylor College of Medicine, Jan 2023 - May 2023",
       "description": "Analyzed large data sets of chromatin accessibility (bulk and single-cell ATAC-seq) and gene expression (bulk and single-cell RNA-seq) data in human ocular tissues to identify regions in the non-coding human genome that may harbor causal variants in inherited retinal diseases. Presented poster at the 2023 Rice Undergraduate Research Symposium.",
       "image": {
-        "src": "LaurenYuBCMposter.png",
+        "src": "images/LaurenYuBCMposter.png",
         "alt": "Research poster presented at the 2023 Rice Undergraduate Research Symposium"
       }
     }
