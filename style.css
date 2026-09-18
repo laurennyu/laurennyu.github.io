@@ -57,9 +57,9 @@ body {
     color: var(--color-accent-hover);
     font-family: var(--font-display);
     font-size: 38px;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.39em;
     line-height: 1;
-    margin: 0 0 0 9px;
+    margin: 0 0 0 10px;
     position: relative;
     text-align: center;
     z-index: 1;
@@ -70,9 +70,9 @@ body {
     font-family: var(--font-accent);
     font-size: 70px;
     left: 50%;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.11em;
     line-height: 0.7;
-    margin-top: 17px;
+    margin-top: 18px;
     opacity: 0.6;
     pointer-events: none;
     position: absolute;
@@ -109,12 +109,28 @@ body {
 
 h2 {
     color: var(--color-accent-hover);
+    display: table;
     font-family: var(--font-body);
     font-size: 30px;
     font-weight: 700;
+    isolation: isolate;
     letter-spacing: 0.03em;
     margin: 34px 0 22px;
+    padding: 0 14px;
+    position: relative;
     text-align: left;
+}
+
+h2::before {
+    background-color: var(--color-surface);
+    /* box-shadow: 2px 2px 0 var(--color-paper-shadow); */
+    content: "";
+    height: 37%;
+    left: -0.1%;
+    position: absolute;
+    top: 58%;
+    width: 100.2%;
+    z-index: -1;
 }
 
 #welcome { text-align: center; }
