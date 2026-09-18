@@ -13,17 +13,7 @@ function createProjectCard(project) {
     card.className = 'proj';
 
     const heading = document.createElement('h3');
-    if (project.link) {
-        const link = document.createElement('a');
-        link.className = 'h3-link';
-        link.href = project.link;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        link.textContent = project.title;
-        heading.appendChild(link);
-    } else {
-        heading.textContent = project.title;
-    }
+    heading.textContent = project.title;
 
     if (Array.isArray(project.technologies) && project.technologies.length) {
         const technologies = document.createElement('span');
@@ -38,6 +28,19 @@ function createProjectCard(project) {
 
     if (project.dates) appendTextElement(card, 'p', 'dates', project.dates);
     if (project.description) appendTextElement(card, 'p', 'proj-description', project.description);
+
+    if (project.link) {
+        const actions = document.createElement('div');
+        actions.className = 'project-actions';
+        const projectLink = document.createElement('a');
+        projectLink.className = 'project-link';
+        projectLink.href = project.link;
+        projectLink.target = '_blank';
+        projectLink.rel = 'noopener noreferrer';
+        projectLink.textContent = 'View project';
+        actions.appendChild(projectLink);
+        card.appendChild(actions);
+    }
 
     if (project.image && project.image.src) {
         const imageWrapper = document.createElement('div');

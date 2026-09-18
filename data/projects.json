@@ -4,7 +4,7 @@
       "title": "Recipe Scraper",
       "technologies": ["Python", "HTML", "JavaScript"],
       "dates": "July 2026 - Present",
-      "description": "Built a recipe parser browser extension to extract structured recipe data from recipe websites. Includes a dashboard to view stored recipes and user ratings.",
+      "description": "Building a recipe parser browser extension to extract structured recipe data from recipe websites. Includes a dashboard to view stored recipes and user ratings.",
       "link": "https://github.com/laurennyu/recipe-scraper"
     },
     {
@@ -41,12 +41,6 @@
         "src": "LaurenYuBCMposter.png",
         "alt": "Research poster presented at the 2023 Rice Undergraduate Research Symposium"
       }
-    },
-    {
-      "title": "Nora's Home Donor Data Analysis",
-      "technologies": ["R"],
-      "dates": "Biokind Analytics, Sep 2022 - Dec 2022",
-      "description": "Collaborated with a team to clean, analyze, and visualize 8 years of donor data to improve donor retention for supporting transplant patients in the Texas Medical Center."
     }
   ]
 }
