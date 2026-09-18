@@ -49,6 +49,10 @@ The projects on the home page are loaded from [`data/projects.json`](data/projec
 
 Because browsers block JSON requests from `file://` pages, use the local server above while developing.
 
+## Design tokens
+
+The first block in [`style.css`](style.css) is the site-wide palette and typography system. Update a value there to change its role across the site—for example, `--color-accent` controls project-title links and hover states, while `--font-body` controls body copy and navigation. Font loading is centralized in that file too: when choosing a new Google Font, update the `@import` URL and its corresponding `--font-*` value.
+
 ## Project Structure
 
 The project is organized as follows:
