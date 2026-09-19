@@ -12,23 +12,49 @@
 
                 <div id="about-me" class="page">
                     <h2>
-                        hi! i'm lauren.
+                        hi! i'm lauren
                     </h2>
-                    <img class="photo-circle" src="lauren.jpeg" alt="photo of Lauren">
-                    <div id="intro-text">
-                        <p>
-                            I'm a data scientist with a background in computer science, machine learning, and design. 
-                            I enjoy using my skills to solve real-world problems with innovative, user-focused solutions in various industries including research, finance, and nonprofits.
-                            <br><br>
-                            <span class="accent-label">Location:</span> NYC
-                            <br>
-                            <span class="accent-label">Work:</span> Applied AI/ML @ JPMC
-                            <br>
-                            <span class="accent-label">Hobbies:</span> Tennis, food, travel
-                            <br>
-                            <span class="accent-label">Alma Mater:</span> Rice University
-                        </p>
+                    <div class="about-showcase" aria-label="Lauren photo slideshow and intro">
+                        <!-- <div class="about-gallery" aria-live="polite">
+                            <button class="gallery-nav gallery-prev" type="button" aria-label="Previous photo">&#8249;</button>
+                            <button class="gallery-nav gallery-next" type="button" aria-label="Next photo">&#8250;</button>
+                            <div class="gallery-track" tabindex="0" aria-label="Image gallery">
+                                <img class="gallery-slide is-active" src="images/lauren.jpeg" alt="Lauren smiling outdoors">
+                                <img class="gallery-slide" src="images/comp410poster.jpeg" alt="Lauren at a poster presentation">
+                                <img class="gallery-slide" src="images/LaurenYuBCMposter.png" alt="Lauren holding presentation materials">
+                            </div>
+                            <div class="gallery-dots" aria-label="Choose a photo">
+                                <button class="gallery-dot is-active" type="button" aria-label="Show photo 1"></button>
+                                <button class="gallery-dot" type="button" aria-label="Show photo 2"></button>
+                                <button class="gallery-dot" type="button" aria-label="Show photo 3"></button>
+                            </div>
+                        </div> -->
+                        <img class="photo-circle" src="images/lauren.jpeg" alt="photo of Lauren">
+                        <div id="intro-text">
+                            <p>
+                                I'm a data scientist with a background in computer science, machine learning, and design.
+                                I enjoy using my skills to solve real-world problems with innovative, user-focused solutions in various industries including research, finance, and nonprofits.
+                            </p>
+                        </div>
                     </div>
+                    <section class="about-facts" aria-label="A few facts about Lauren">
+                        <article class="about-fact">
+                            <p class="about-fact-label">Based in</p>
+                            <p class="about-fact-value">New York City</p>
+                        </article>
+                        <article class="about-fact">
+                            <p class="about-fact-label">Currently</p>
+                            <p class="about-fact-value">Applied AI/ML @ JPMC</p>
+                        </article>
+                        <article class="about-fact">
+                            <p class="about-fact-label">Hobbies</p>
+                            <p class="about-fact-value">Tennis, food, and travel</p>
+                        </article>
+                        <article class="about-fact">
+                            <p class="about-fact-label">Alma mater</p>
+                            <p class="about-fact-value">Rice University</p>
+                        </article>
+                    </section>
                     <h2>
                         contact me
                     </h2>
@@ -44,5 +70,77 @@
             <div id="site-footer"></div>
         </div>
         <script src="scripts/header-footer.js" defer></script>
+        <script>
+            const slides = Array.from(document.querySelectorAll('.gallery-slide'));
+            const dots = Array.from(document.querySelectorAll('.gallery-dot'));
+            const prevButton = document.querySelector('.gallery-prev');
+            const nextButton = document.querySelector('.gallery-next');
+            const gallery = document.querySelector('.gallery-track');
+
+            if (slides.length && dots.length && prevButton && nextButton && gallery) {
+                let currentIndex = 0;
+                let isAnimating = false;
+
+                function applyStackState(index) {
+                    slides.forEach((slide, slideIndex) => {
+                        slide.classList.remove('is-active', 'is-prev', 'is-next', 'is-exit');
+
+                        const relative = (slideIndex - index + slides.length) % slides.length;
+
+                        if (relative === 0) {
+                            slide.classList.add('is-active');
+                        } else if (relative === 1) {
+                            slide.classList.add('is-next');
+                        } else if (relative === slides.length - 1) {
+                            slide.classList.add('is-prev');
+                        }
+                    });
+
+                    dots.forEach((dot, dotIndex) => {
+                        dot.classList.toggle('is-active', dotIndex === index);
+                    });
+                }
+
+                function showSlide(index) {
+                    if (isAnimating) return;
+
+                    const nextIndex = (index + slides.length) % slides.length;
+                    if (nextIndex === currentIndex) {
+                        applyStackState(currentIndex);
+                        return;
+                    }
+
+                    isAnimating = true;
+                    const currentSlide = slides[currentIndex];
+                    const nextSlide = slides[nextIndex];
+
+                    currentSlide.classList.remove('is-active', 'is-prev', 'is-next');
+                    currentSlide.classList.add('is-exit');
+                    nextSlide.classList.add('is-active');
+                    nextSlide.classList.remove('is-prev', 'is-next');
+
+                    setTimeout(() => {
+                        currentIndex = nextIndex;
+                        applyStackState(currentIndex);
+                        isAnimating = false;
+                    }, 320);
+                }
+
+                applyStackState(currentIndex);
+
+                prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+                nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+                dots.forEach((dot, index) => dot.addEventListener('click', () => showSlide(index)));
+                gallery.addEventListener('click', () => showSlide(currentIndex + 1));
+                gallery.addEventListener('keydown', (event) => {
+                    if (event.key === 'ArrowRight') {
+                        showSlide(currentIndex + 1);
+                    }
+                    if (event.key === 'ArrowLeft') {
+                        showSlide(currentIndex - 1);
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

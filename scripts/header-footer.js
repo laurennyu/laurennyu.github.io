@@ -17,12 +17,13 @@
 
     const footerMarkup = `
         <footer>
+            <p id="signature">Lauren Yu, 2026.</p>
             <p id="thanks">
                 <a href="https://www.linkedin.com/in/laurenyuu/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <span>/</span>
                 <a href="https://github.com/laurennyu" target="_blank" rel="noopener noreferrer">GitHub</a>
             </p>
-            <p id="signature">Lauren Yu, 2026</p>
+            
         </footer>
     `;
 
