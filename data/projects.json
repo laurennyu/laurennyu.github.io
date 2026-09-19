@@ -11,7 +11,7 @@
       "title": "SLB Game Editor & Engine (SLB-Sponsored)",
       "technologies": ["TypeScript", "C#", "React", "Azure (SignalR, CosmosDB)"],
       "dates": "SLB & Rice University, Jan 2025 - May 2025",
-      "description": "Collaborated with 30+ students to develop full-stack real-time multiplayer game editor and engine web apps for SLB. Designed and implemented CosmosDB data models and backend integrations to persist and synchronize game state. Developed test cases and conducted load testing to evaluate database performance, scalability, and data consistency under concurrent user workloads.",
+      "description": "Collaborated with 30+ students to develop a full-stack real-time multiplayer game editor and engine web apps for SLB. Designed and implemented CosmosDB data models and backend integrations to persist and synchronize game state. Developed test cases and conducted load testing to evaluate database performance, scalability, and data consistency under concurrent user workloads.",
       "image": {
         "src": "images/comp410poster.jpeg",
         "alt": "Capstone final poster presented at the Rice Engineering Design Showcase"
